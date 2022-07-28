@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+    
+
+</head>
+
+<body class="FRCenterCenter">
+
+    <div class="container">
+
+        <form action="#" autocomplete="off" id="mainBox" class="FCEvenlyCenter" name="ClalcForm">
+            
+            <header class="FREvenlyCenter">
+
+                <div class="result FCCenterStart">
+                    <span id="enteredNumber"></span>
+                    <input type="number" title="none" class="enterNumber" id="enterInput">
+                    <span id="oddEven"></span>
+    
+                </div>
+
+                <button type="input" class="historyBTN" onclick="displayHistory()">History </button>
+            </header>
+            
+
+            <div class="buttons FRAroundCenter">
+
+                <div  class="FRAroundCenter width">
+                    <input type="button" value="C" onclick="clearEverything()" class="cal" name="clear" id="clear">
+                    <input type="button" value="CE" onclick="clearOnlyInput()" class="cal" name="CE" id="CE">
+                    <input type="button" value="%"  onclick="getMathsymbol(value)" class="cal"name="leftOver" id="leftOver">
+                    <input type="button" value="/" onclick="getMathsymbol(value)" class="cal" name="division" id="division">
+                </div>
+
+                <div  class="FRAroundCenter width">
+                    <input type="button" value="7" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="8" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="9" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="×" onclick="getMathsymbol(value)" class="cal" name="Multiplication" id="Multiplication">
+                </div>
+
+                <div  class="FRAroundCenter width">
+                    <input type="button" value="4" class="anima"  onclick="getNumber(value)">
+                    <input type="button" value="5" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="6" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="-" onclick="getMathsymbol(value)" class="cal" name="minues" id="minues">
+                </div>
+
+                <div  class="FRAroundCenter width">
+                    <input type="button" value="1" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="2" class="anima"onclick="getNumber(value)">
+                    <input type="button" value="3" class="anima" onclick="getNumber(value)">
+                    <input type="button" value="+" onclick="getMathsymbol(value)" class="cal" name="plus" id="plus">
+                </div>
+
+                <div  class="FRAroundCenter width">
+                    <input type="button" value="" class="anima" >
+                    <input type="button" value="0" class="anima" onclick="getNumber(value)" >
+                    <input type="button" value="" class="anima" >
+                    <input type="button" value="=" onclick="showResult()" class="cal" name="equal" id="equal">
+                </div>
+
+
+                <span id="creator">Made By PilentBoy</span>
+
+            </div>
+
+        </form>
+    
+        <div id="history" class="FCBetweenCenter">
+
+            <div id="topBTN" class="FREvenlyCenter">
+                <button type="input"  class="historyBTN" onclick="clearHistory()">Clear All</button>
+                <button type="input"  class="historyBTN" onclick="clearHistoryFirst()">Clear First</button>
+                <button type="input"  class="historyBTN" onclick="displayHistory()">Back</button>
+            </div>
+            
+            <div  class="FRStartStart historyList">
+                   
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+ 
+</body>
+</html>

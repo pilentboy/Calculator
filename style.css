@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    /* background-color:rgb(0, 0, 0); */
+    width: 100%;
+    height: 100vh;
+    
+    backdrop-filter:blur(0px);
+    background-image: url("./black-370118_640.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+:root{
+    --Navy-blue:rgb(29, 29, 46);
+    --Navy-blueLight:rgb(40, 40, 55);
+    --green:rgb(42, 139, 90);
+    --orange:rgb(195, 134, 22);
+    --blue:rgb(35, 133, 155);
+    --pink:rgb(171, 99, 111);
+    --yellow:rgb(193, 193, 35);
+    --red:rgb(184, 60, 85);
+    --purple:rgb(95, 77, 168);
+    --purple2:rgb(117, 63, 117);
+}
+
+
+/* FLEX CLASSES */
+/* FLEX ROW */
+.FRCenterCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FRStartStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+
+.FRStartCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FRCenterStart{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.FREndCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FRBetweenCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FREvenlyCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FRAroundCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FRAroundEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+
+/* FLEX COLUMN */
+.FCBetweenCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FCEvenlyCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FCAroundEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.FCCenterCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FCCenterStart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.FCStartCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.container{
+    width: 290px;
+    height: 500px;
+    border-radius: 5px;
+    
+    background-color: var(--Navy-blue);
+}
+
+#mainBox{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    width:  40px;
+    height: 40px;
+    border-radius: 100%;
+    color: white;
+    background-color:var(--Navy-blueLight);
+    border: 1px solid transparent;
+
+    
+}
+
+
+
+.anima{
+    animation-name: numbersAnima;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes numbersAnima{
+    from {
+       
+        height: 0px;
+    }
+    to{
+      
+        height: 40px;
+    }
+}
+
+
+input:hover{
+    cursor: pointer;
+}
+
+
+.buttons input:active{
+    background-color: black;
+    color: white;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+.buttons{
+    width: 100%;
+    height: 70%;   
+}
+
+
+.width{
+    width: 100%;
+}
+
+#clear{
+    background-color:var(--green);
+}
+
+#CE{
+    background-color: var(--pink);
+}
+
+#leftOver{
+    background-color: var(--orange);
+}
+
+#division{
+    background-color: var(--blue);
+}
+
+
+#Multiplication{
+    background-color: var(--orange);
+}
+
+
+
+#minues{
+    background-color:var(--red);
+}
+
+#plus{
+    background-color: var(--purple);
+    
+}
+
+#plus,#division,#eqauls,#minues,#Multiplication{
+    font-size: 1.1rem;
+    
+}
+
+#equal{
+    background-color: var(--purple2);
+}
+
+#equal:active{
+    background-color: var(--Navy-blueLight);
+}
+#plus:active{
+    background-color: var(--Navy-blueLight);
+}
+#minues:active{
+    background-color: var(--Navy-blueLight);
+}
+#Multiplication:active{
+    background-color: var(--Navy-blueLight);
+}
+#division:active{
+    background-color: var(--Navy-blueLight);
+}
+#leftOver:active{
+    background-color: var(--Navy-blueLight);
+}
+#CE:active{
+    background-color: var(--Navy-blueLight);
+}
+#clear:active{
+    background-color: var(--Navy-blueLight);
+}
+
+
+
+
+
+span{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* SHOW RESULT */
+header{
+    width: 100%;
+    height: 20%;
+}
+
+.result{
+    width: 70%;
+    height: 100%;
+}
+
+#oddEven{
+    color: white;
+    font-size: 0.8rem;
+    visibility: hidden;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#enteredNumber{
+    margin-left: 3%;
+    margin-bottom: 3%;
+    visibility: hidden;
+}
+
+.enterNumber{
+    width: 80%;
+    height: 40%;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-radius: 0;
+    /* border-bottom: 1px solid red; */
+    outline: none;
+    margin-left: 2%;
+    box-shadow:0px 1px 10px gray;
+}
+
+.enterNumber:focus{
+    box-shadow:0px 1px 10px red;
+
+}
+
+#symbole,#equalSymbole{
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+/* chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* ------------ HISTORY ------------ */
+#history{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.historyBTN{
+    background-color: var(--purple2);
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+}
+
+#topBTN{
+    width: 100%;
+    height: 20%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.historyList{
+    width: 100%;
+    height: 80%;
+    align-content: flex-start;
+    overflow-y:auto;
+    scrollbar-width: 10px;
+}
+
+
+
+.his{
+    font-size: 1rem;
+    width: 50%;
+    height: 25px;
+    padding: 0px 10px !important;
+}
+
+
+.padding5px{
+    padding: 5px 0px;
+}
+
+.topBR{
+    border-top: 1px solid green;
+}
+
+
+.bl{
+    font-size: 1rem;
+    width: 100%;
+    min-height:25px;
+}
+
+
+/* ANIMATION */
